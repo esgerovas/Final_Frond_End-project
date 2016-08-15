@@ -1,0 +1,86 @@
+#header{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:70px;
+	padding:10px 0 0 0;
+	text-transform:uppercase;
+	.navbar{
+		margin-bottom: 0;
+		border:0;
+		.navbar-header{
+			button .icon-bar{
+				background-color:$blueColor;
+			}
+			.navbar-brand{
+				width: 160px;
+				margin-right:40px;
+				margin-top:-7px;
+				img{
+					width: 100%;
+				}
+			}
+		} //navbar-header
+		.navbar-collapse{
+			a{
+				padding:15px 10px;
+				color:$whiteColor;	
+				@include transition(all, 0.3s, ease);
+				&:focus{
+					background-color:transparent !important;
+					color:$blueColor;
+				}
+				&:hover{
+					background-color:transparent !important;
+					color:$blueColor;
+				}
+			}
+			.active a{
+				color:$blueColor;
+				background-color:transparent;
+				border-bottom:2px solid $blueColor;	
+			}
+			
+			.sign{
+				padding-top:7px;
+				a{
+					line-height:1;
+					padding:10px 25px;
+					color:$blueColor;
+					font-size:13px;
+					border:1px solid $blueColor;
+					@include border-radius(2px);
+					&:hover{
+						color:white;
+						background-color:$blueColor !important;
+					}
+				}
+			}
+		} // navbar-collapse
+
+	}
+}
+@media only screen and (min-width: 768px) and (max-width:1200px) {
+   #header{ 
+   		.navbar-nav a {
+	   		font-size:13px;
+	   		padding:15px 5px;
+    	}
+    	.navbar-brand{
+			width: 100px;
+			margin-right:0px !important;
+		}	
+	}
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+	#header{ 
+		.navbar-brand{
+			display:none;
+		}
+		.navbar-nav a {
+	   		font-size:12px;
+	   		padding:15px 5px;
+	   	}
+	}
+}
