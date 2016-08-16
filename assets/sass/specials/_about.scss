@@ -55,6 +55,7 @@
 				font-size:14px;
 				display:inline-block;
 				color:#606060;
+				cursor: pointer;
 				&:hover,&.active{
 					background-color: $blueColor;
 					color:white;
