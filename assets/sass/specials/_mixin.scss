@@ -1,8 +1,11 @@
 body{
   font-family: 'Lato', sans-serif;
   font-size:14px;
-  a:focus, a:active{
+  a:focus, a:active,a:hover{
     text-decoration: none;
+  }
+  p{
+    line-height: 25px;
   }
 }
 
@@ -18,3 +21,4 @@ body{
        -o-transition:$property $time $form;
           transition:$property $time $form;
 }
+

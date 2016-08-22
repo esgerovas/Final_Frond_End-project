@@ -1,5 +1,6 @@
 #about{
 	color:black;
+	padding-bottom:50px;
 //global properties
 	h2{
 		font-size:34px;
@@ -27,7 +28,6 @@
 	}
 	p{
 		font-size:16px;
-		line-height:25px;
 	}
 	i{
 		color:$blueColor;
@@ -36,6 +36,9 @@
 	}
 	img{
 		margin:0 auto;
+	}
+	.first-come{
+		display:none;
 	}
 //*********first-part**************
 	.first-part{
@@ -128,6 +131,12 @@
 				width: 100%;
 			}
 		}
+	}
+	.second-come{
+		display:none;
+	}
+	.first-come{
+		display:block !important;
 	}
 }
 @media only screen and (max-width:480px){

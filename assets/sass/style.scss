@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&subset=latin-ext');
 
+@import "bootstrap";
 @import "specials/variables";
 @import "specials/mixin";
 @import "specials/preloader";
@@ -11,3 +12,4 @@
 @import "specials/feedback";
 @import "specials/team";
 @import "specials/contact";
+@import "specials/animate";

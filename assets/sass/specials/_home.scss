@@ -1,9 +1,12 @@
 #home{
-	height:670px;
+	--height:670px;  //pencerenin height-ine gore teyin olunur jquery
 	background:#94365B url('../images/background.jpg') no-repeat left top;
 	background-attachment:fixed;
 	background-size:cover;
-	padding-top:230px;
+	padding-top:17%;
+	.container{
+		display:none;
+	}
 	.title{
 		text-align:center;
 		color:white;
@@ -76,22 +79,25 @@
 		}
 	}
 }
-
 #logo{
 	background-color:$greyColor;
 	text-align:center;
 	padding:15px 0 10px;
 	ul{
 		list-style-type: none;
-		display:flex;
-		flex-wrap: wrap;
 		justify-content:center;
+		padding:0;
+		position:relative;
 		li{
 			padding:10px 25px;
+			display:inline-block;
+			max-width:170px;
+			position:relative;
 			img{
 				width:100%;
 			}
 		}
+		
 	}
 
 }
